@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Quest - ログイン</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- 外部CSSファイルの読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="split-layout">
+    <!-- 左側エリア：ビジュアルとコピー -->
+    <div class="left-panel">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div class="logo-text">FitQuest</div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title-main">汗をかいてレベルを上げろ</h1>
+            <h2 class="hero-title-sub"><span class="text-accent">キャラも自分も</span>育てる次世代育成ゲーム</h2>
+            <p class="hero-desc">
+                FitQuestはトレーニング管理をゲーミフィケーション化した次世代フィットネスプラットフォームです。ワークアウトを記録して経験値(XP)を獲得し、キャラクターを育成しましょう。
+            </p>
+        </div>
+
+        <div class="hero-footer">
+            <div class="hero-footer-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                ワークアウト記録
+            </div>
+            <div class="hero-footer-item">
+                <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                フレンド機能 & 称号
+            </div>
+        </div>
+    </div>
+
+    <!-- 右側エリア：ログインフォーム -->
+    <div class="right-panel">
+        <div class="login-container">
+            <div class="login-header">
+                <h2 class="login-title">アカウントにログイン</h2>
+                <p class="login-subtitle">トレーニングデータを管理して限界に挑戦しよう</p>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label class="form-label" for="email">メールアドレス</label>
+                    <input type="email" id="email" class="form-input" placeholder="fitquest@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="password">パスワード</label>
+                    <input type="password" id="password" class="form-input" placeholder="••••••••••••" required>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked>
+                        <span>ログイン状態を保持</span>
+                    </label>
+                    <a href="#" class="forgot-password">パスワードをお忘れですか？</a>
+                </div>
+
+                <button type="submit" class="btn-primary">ログインする</button>
+
+                <div class="register-prompt">
+                    アカウントをお持ちでないですか？ <a href="#">新規登録はこちら</a>
+                </div>
+            </form>
+
+            <div class="social-login-container">
+                <button type="button" class="btn-social js-social-login" data-provider="Google">
+                    <svg viewBox="0 0 24 24"><path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.761H12.545z"/></svg>
+                    Google
+                </button>
+                <button type="button" class="btn-social js-social-login" data-provider="Apple">
+                    <svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05 1.8-3.08 1.8-1.09 0-1.44-.65-3.2-.65s-2.14.65-3.27.65c-1.06 0-2.26-.95-3.17-2C2.46 17.65.65 12.65 2.65 9.17c1-1.74 2.75-2.85 4.67-2.85 1.48 0 2.8.96 3.7.96.9 0 2.45-1.12 4.14-1.12 2.05 0 3.73.96 4.66 2.36-4.04 2.37-3.36 8.35.58 9.94-.48 1.25-1.14 2.53-2.05 3.32h-.1l-.1-.02-.1-.02v-.02zm-3.8-17.75c.67-1.14.86-2.58.55-3.73-1.18.23-2.7 1.05-3.4 2.14-.62 1.05-.9 2.44-.6 3.65 1.34.1 2.82-.9 3.45-2.06z"/></svg>
+                    Apple
+                </button>
+                <button type="button" class="btn-social js-social-login" data-provider="LINE">
+                    <svg viewBox="0 0 24 24"><path fill="#00E676" d="M24 10.3c0-4.36-4.22-7.91-9.42-7.91-5.22 0-9.45 3.55-9.45 7.91 0 3.94 3.4 7.25 8.1 7.82.32.07.75.21.86.5.1.25.03.63.01.8l-.13 1.27c-.04.25-.19.82.72.44.9-.38 4.88-2.87 6.67-4.94C23.11 14.37 24 12.43 24 10.3M7.34 12.3H5.73V7.75c0-.28-.23-.5-.5-.5-.28 0-.5.22-.5.5v5.05c0 .28.23.5.5.5h2.11c.28 0 .5-.22.5-.5 0-.28-.23-.5-.5-.5m3.11-2.48c.08-.09.11-.2.11-.31v-1.76c0-.28-.22-.5-.5-.5s-.5.22-.5.5v1.76c0 .11.03.22.1.31s.18.15.3.18l1.49.46v1.44c0 .28.23.5.5.5.28 0 .5-.22.5-.5V9.82c0-.22-.16-.42-.38-.48l-1.62-.5zM14.47 7.25c-.28 0-.5.22-.5.5v5.05c0 .28.23.5.5.5h2.11c.28 0 .5-.22.5-.5 0-.28-.23-.5-.5-.5h-1.61V7.75c0-.28-.22-.5-.5-.5m3.75 5.55v-5.05c0-.28-.22-.5-.5-.5s-.5.22-.5.5v5.05c0 .28.23.5.5.5.28 0 .5-.22.5-.5"/></svg>
+                    LINE
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 外部JavaScriptファイルの読み込み -->
+<script src="main.js"></script>
+</body>
+</html>
