@@ -63,16 +63,11 @@ a:hover {
     gap: 10px;
 }
 
-.logo-icon {
-    background-color: var(--primary-color);
-    color: #000;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    font-weight: bold;
+.custom-logo {
+    width: 40px; /* お好みのロゴの幅に合わせて数値を変更してください */
+    height: auto;
+    /* 必要であれば margin-right: 10px; などでテキストとの余白を調整します */
+}
 }
 
 .logo-icon svg {
