@@ -64,7 +64,7 @@ a:hover {
 }
 
 .custom-logo {
-    width: 40px; /* お好みのロゴの幅に合わせて数値を変更してください */
+    width: 50px; /* お好みのロゴの幅に合わせて数値を変更してください */
     height: auto;
     /* 必要であれば margin-right: 10px; などでテキストとの余白を調整します */
 }
