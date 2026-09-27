@@ -63,11 +63,18 @@ a:hover {
     gap: 10px;
 }
 
-.custom-logo {
-    width: 50px; /* お好みのロゴの幅に合わせて数値を変更してください */
-    height: auto;
-    /* 必要であれば margin-right: 10px; などでテキストとの余白を調整します */
+.logo-icon {
+    background-color: ffffff; 
+    width: 32px;  
+    height: 32px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 }
+.custom-logo {
+    width: 50px; 
+    height: auto;
 }
 
 .logo-icon svg {
